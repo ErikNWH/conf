@@ -4,16 +4,21 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AuthModule } from './modules/auth.module';
 import { AuthRoutingModule } from './modules/auth-routing.module';
+import { HomeRoutingModule } from './modules/home-routing.module';
+import { HomeModule } from './modules/home.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
     
   ],
   imports: [
     BrowserModule,
     AuthModule,
-    AuthRoutingModule
+    AuthRoutingModule,
+    HomeModule,
+    HomeRoutingModule
 
   ],
   providers: [],
